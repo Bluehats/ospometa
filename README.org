@@ -46,4 +46,4 @@ OSPOs and called for volunteers to help with OSPOmeta.
 
 * License
 
-This repository is published under the Apache 2.0 license.
+This repository is published under the [[file:LICENSES/Apache-2.0.txt][Apache 2.0]] license.
