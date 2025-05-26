@@ -20,8 +20,8 @@ entry in the format proposed by DINUM. Each entry is of the form:
   :   floss_policy: the URL of the FLOSS policy published by the OSPO
   :   code: a list of source code organizations/groups
 
-  (=pso_id= is a local French identifier for the organization, not used
-  in the HTML form.)
+  =pso_id= is a local French identifier for the organization, not used
+  in the HTML form.
 
 This format is also the one used for the list of public sector OSPOs
 hosted by the [[https://ospo-alliance.org][OSPO Alliance]].
