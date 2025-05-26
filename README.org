@@ -1,0 +1,49 @@
+[[https://bluehats.world][https://img.shields.io/badge/We%20support-BlueHats-blue.svg?style=for-the-badge]]
+
+* OSPOmeta
+
+A minimal metadata schema for Open Source Programme Offices.
+
+The goal of OSPOmeta is to create a vocabulary of concepts that can be
+used to standardize the exchange of metadata across organizations.
+
+* Tooling
+
+[[file:tools/ospometa-yaml-generator.html][tools/ospometa-yaml-generator.html]] provides a tool to build a yaml
+entry in the format proposed by DINUM. Each entry is of the form:
+
+  : [URL]: the main URL of the OSPO
+  :   name: the name of the OSPO
+  :   description: the description of the OSPO
+  :   email: the contact email
+  :   created: the creation date of the OSPO
+  :   floss_policy: the URL of the FLOSS policy published by the OSPO
+  :   code: a list of source code organizations/groups
+
+  (=pso_id= is a local French identifier for the organization, not used
+  in the HTML form.)
+
+This format is also the one used for the list of public sector OSPOs
+hosted by the [[https://ospo-alliance.org][OSPO Alliance]].
+
+* Roadmap
+
+- 0.0.1 :: Provide a first schema.
+
+* Contribute
+
+The project will be open to contribution after the 0.0.1 release.
+
+* History
+
+An attempt to provide metadata to describe Open Source Program Offices
+was started in late 2024 by the French Interministerial Digital
+Directorate (DINUM), which published this [[https://raw.githubusercontent.com/codegouvfr/codegouvfr-data/refs/heads/main/fr-public-sector-ospo.yml][yaml file with a list of
+public sector OSPOs]].
+
+In June 2025, the [[https://ospo-alliance.org][OSPO Alliance]] hosted a project to list public sector
+OSPOs and called for volunteers to help with OSPOmeta.
+
+* License
+
+This repository is published under the Apache 2.0 license.
