@@ -295,17 +295,19 @@
        let yaml = `${url}:\n`;
 
        formFields.forEach(field => {
-	 if (field.yamlKey && values[field.id]) {
-	   if (field.list) {
-	     yaml += `  ${field.yamlKey}:\n`;
-	     const items = values[field.id].split('\n').filter(item => item.trim());
-	     items.forEach(item => {
-	       yaml += `    - ${item.trim()}\n`;
-	     });
-	   } else {
-	     yaml += `  ${field.yamlKey}: ${values[field.id]}\n`;
-	   }
-	 }
+         if (field.yamlKey && values[field.id]) {
+           if (field.list) {
+             yaml += `  ${field.yamlKey}:\n`;
+             const items = values[field.id].split('\n').filter(item => item.trim());
+             items.forEach(item => {
+               yaml += `    - ${item.trim()}\n`;
+             });
+           } else if (field.yamlKey === 'description') {
+             yaml += `  ${field.yamlKey}:\n    en: ${values[field.id]}\n`;
+           } else {
+             yaml += `  ${field.yamlKey}: ${values[field.id]}\n`;
+           }
+         }
        });
 
        return yaml;
