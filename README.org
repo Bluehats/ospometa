@@ -28,7 +28,7 @@ entry in the format proposed by DINUM.
 | country      | The country code                                  | Yes       |
 | description  | The description of the OSPO                       | Yes       |
 | email        | The contact email                                 | Yes       |
-| floss_policy | The URL of the FLOSS policy published by the OSPO | Yes       |
+| floss_policy | The URL of the FLOSS policy published by the OSPO | No        |
 | created      | The creation date of the OSPO                     | No        |
 | code         | A list of source code organizations/groups        | No        |
 
