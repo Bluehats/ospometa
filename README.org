@@ -5,15 +5,23 @@
 A minimal metadata schema for Open Source Programme Offices.
 
 The goal of OSPOmeta is to create a vocabulary of concepts that can be
-used to standardize the exchange of metadata across organizations.
+used to standardize the description of Open Source Program Offices in
+order to facilitate collaboration between them.
+
+* Status
+
+The OSPOmeta schema /does not yet exist/. If you would like to join our
+efforts in assessing the problem we want to address and designing the
+schema as a solution to it, please [[mailto:bzg@bzg.fr][send me an email]].
 
 * Tooling
 
-[[file:tools/ospometa-yaml-generator.html][tools/ospometa-yaml-generator.html]] provides a tool to build a yaml
+[[file:tools/ospometa-yaml-generator.html][tools/ospometa-yaml-generator.html]] provides a tool to build a =yaml=
 entry in the format proposed by DINUM. Each entry is of the form:
 
   : [URL]: the main URL of the OSPO
   :   name: the name of the OSPO
+  :   country: the country code
   :   description: the description of the OSPO
   :   email: the contact email
   :   created: the creation date of the OSPO
@@ -23,8 +31,8 @@ entry in the format proposed by DINUM. Each entry is of the form:
   =pso_id= is a local French identifier for the organization, not used
   in the HTML form.
 
-This format is also the one used for the list of public sector OSPOs
-hosted by the [[https://ospo-alliance.org][OSPO Alliance]].
+This format is the one used for [[https://floss-pso.network][floss-pso.network]] which maintains and
+publishes a list of public sector OSPOs.
 
 * Roadmap
 
@@ -41,9 +49,13 @@ was started in late 2024 by the French Interministerial Digital
 Directorate (DINUM), which published this [[https://raw.githubusercontent.com/codegouvfr/codegouvfr-data/refs/heads/main/fr-public-sector-ospo.yml][yaml file with a list of
 public sector OSPOs]].
 
-In June 2025, the [[https://ospo-alliance.org][OSPO Alliance]] hosted a project to list public sector
-OSPOs and called for volunteers to help with OSPOmeta.
+In June 2025, some volunteers announced [[https://floss-pso.network][floss-pso.network]], a project
+under the [[https://ospo-alliance.org][OSPO Alliance]] umbrella, which maintains and publishes a list
+of public sector OSPOs.
 
 * License
 
-This repository is published under the [[file:LICENSES/Apache-2.0.txt][Apache 2.0]] license.
+The schema and its documentation is released under the [[file:LICENSES/CC0-1.0.txt][Creative
+Commons Zero v1.0 Universal]] license.
+
+Source code is published under the [[file:LICENSES/Apache-2.0.txt][Apache 2.0]] license.
