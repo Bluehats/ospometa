@@ -17,22 +17,23 @@ schema as a solution to it, please [[mailto:bzg@bzg.fr][send me an email]].
 * Tooling
 
 [[file:tools/ospometa-yaml-generator.html][tools/ospometa-yaml-generator.html]] provides a tool to build a =yaml=
-entry in the format proposed by DINUM. Each entry is of the form:
+entry in the format proposed by DINUM.
 
-  : [URL]: the main URL of the OSPO
-  :   name: the name of the OSPO
-  :   country: the country code
-  :   description: the description of the OSPO
-  :   email: the contact email
-  :   created: the creation date of the OSPO
-  :   floss_policy: the URL of the FLOSS policy published by the OSPO
-  :   code: a list of source code organizations/groups
+Here are the temporary "specs":
 
-  =pso_id= is a local French identifier for the organization, not used
-  in the HTML form.
+| Field        | Description                                       | Mandatory |
+|--------------+---------------------------------------------------+-----------|
+| URL          | The main URL of the OSPO                          | Yes (id)  |
+| name         | The name of the OSPO                              | Yes       |
+| country      | The country code                                  | Yes       |
+| description  | The description of the OSPO                       | Yes       |
+| email        | The contact email                                 | Yes       |
+| floss_policy | The URL of the FLOSS policy published by the OSPO | Yes       |
+| created      | The creation date of the OSPO                     | No        |
+| code         | A list of source code organizations/groups        | No        |
 
-This format is the one used for [[https://floss-pso.network][floss-pso.network]] which maintains and
-publishes a list of public sector OSPOs.
+This =yaml= format is the one used for [[https://floss-pso.network][floss-pso.network]] which maintains
+and publishes a list of public sector OSPOs.
 
 * Roadmap
 
