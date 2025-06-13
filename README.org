@@ -19,7 +19,7 @@ schema as a solution to it, please [[mailto:bzg@bzg.fr][send me an email]].
 [[file:tools/ospometa-yaml-generator.html][tools/ospometa-yaml-generator.html]] provides a tool to build a =yaml=
 entry in the format proposed by DINUM.
 
-Here are the temporary "specs":
+* Specs (alpha)
 
 | Field        | Description                                       | Mandatory |
 |--------------+---------------------------------------------------+-----------|
